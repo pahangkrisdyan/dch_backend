@@ -43,10 +43,10 @@ class InitDatabase {
         return args -> {
             //String text, int type, Long userId, Long postParentId, Long tagId, String imgDownloadUrl
             //problem
-            System.out.println("Init Post " + postRepository.save(new Post(null,"Berapa 1 + 1?", 1, new Long(3), null, new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
+            System.out.println("Init Post " + postRepository.save(new Post("Penjumlahan Matematika","Berapa 1 + 1?", 1, new Long(3), null, new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
 
             //solution
-            System.out.println("Init Post " + postRepository.save(new Post("Penjumlahan Matermatika","Jawabannya 2", 2, new Long(1), new Long(1), new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
+            System.out.println("Init Post " + postRepository.save(new Post(null,"Jawabannya 2", 2, new Long(1), new Long(1), new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
 
             //comment
             System.out.println("Init Post " + postRepository.save(new Post(null,"Iya benar 2", 3, new Long(2), new Long(1), new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
@@ -54,10 +54,10 @@ class InitDatabase {
 
 
             //problem
-            System.out.println("Init Post " + postRepository.save(new Post(null,"Berapa 5 + 5?", 1, new Long(4), null, new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
+            System.out.println("Init Post " + postRepository.save(new Post("Penjumlahan Matematika 2","Berapa 5 + 5?", 1, new Long(4), null, new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
 
             //solution
-            System.out.println("Init Post " + postRepository.save(new Post("Penjumlahan Matermatika", "Jawabannya adalah 10", 2, new Long(1), new Long(5),new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
+            System.out.println("Init Post " + postRepository.save(new Post(null, "Jawabannya adalah 10", 2, new Long(1), new Long(5),new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
 
             //comment
             System.out.println("Init Post " + postRepository.save(new Post(null,"Saya setuju 10", 3, new Long(2), new Long(5), new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
