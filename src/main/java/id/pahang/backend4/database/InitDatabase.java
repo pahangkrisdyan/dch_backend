@@ -64,9 +64,5 @@ class InitDatabase {
             System.out.println("Init Post " + postRepository.save(new Post(null,"Saya nggak setuju", 3, new Long(3), new Long(5), new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
         };
     }
-
-
-
-
 }
 

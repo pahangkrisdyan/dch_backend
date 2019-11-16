@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/vote")
+@RequestMapping(value = "/vote")
 public class VoteController {
 
     @Autowired
