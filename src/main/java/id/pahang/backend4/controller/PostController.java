@@ -90,6 +90,8 @@ public class PostController {
 
         private Long userId;
 
+        private int userType;
+
         private String userName;
 
         private String userImageUrl;
@@ -112,6 +114,7 @@ public class PostController {
 
 
         public PostRes(Post post) {
+            this.userType = userRepository.findById(post.getUserId()).get().getType();
             this.title = post.getTitle();
             this.id = post.getId();
             this.postParentId = post.getPostParentId();
@@ -133,6 +136,14 @@ public class PostController {
             this.imgDownloadUrl = post.getImgDownloadUrl();
             this.userName = userRepository.findById(post.getUserId()).get().getName();
             this.userImageUrl = userRepository.findById(post.getUserId()).get().getImgDownloadUrl();
+        }
+
+        public int getUserType() {
+            return userType;
+        }
+
+        public void setUserType(int userType) {
+            this.userType = userType;
         }
 
         public String getTitle() {
