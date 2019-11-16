@@ -43,25 +43,25 @@ class InitDatabase {
         return args -> {
             //String text, int type, Long userId, Long postParentId, Long tagId, String imgDownloadUrl
             //problem
-            System.out.println("Init Post " + postRepository.save(new Post("Berapa 1 + 1?", 1, new Long(3), null, new Long(1), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
+            System.out.println("Init Post " + postRepository.save(new Post("Berapa 1 + 1?", 1, new Long(3), null, new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
 
             //solution
-            System.out.println("Init Post " + postRepository.save(new Post("Jawabannya 2", 2, new Long(1), new Long(1), new Long(1), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
+            System.out.println("Init Post " + postRepository.save(new Post("Jawabannya 2", 2, new Long(1), new Long(1), new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
 
             //comment
-            System.out.println("Init Post " + postRepository.save(new Post("Iya benar 2", 3, new Long(2), new Long(1), new Long(1), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
-            System.out.println("Init Post " + postRepository.save(new Post("WKWKWK masak 2 sih", 3, new Long(4), new Long(1), new Long(1), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
+            System.out.println("Init Post " + postRepository.save(new Post("Iya benar 2", 3, new Long(2), new Long(1), new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
+            System.out.println("Init Post " + postRepository.save(new Post("WKWKWK masak 2 sih", 3, new Long(4), new Long(1), new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
 
 
             //problem
-            System.out.println("Init Post " + postRepository.save(new Post("Berapa 5 + 5?", 1, new Long(4), null, new Long(1), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
+            System.out.println("Init Post " + postRepository.save(new Post("Berapa 5 + 5?", 1, new Long(4), null, new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
 
             //solution
-            System.out.println("Init Post " + postRepository.save(new Post("Jawabannya adalah 10", 2, new Long(1), new Long(5),new Long(1), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
+            System.out.println("Init Post " + postRepository.save(new Post("Jawabannya adalah 10", 2, new Long(1), new Long(5),new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
 
             //comment
-            System.out.println("Init Post " + postRepository.save(new Post("Saya setuju 10", 3, new Long(2), new Long(5), new Long(1), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
-            System.out.println("Init Post " + postRepository.save(new Post("Saya nggak setuju", 3, new Long(3), new Long(5), new Long(1), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
+            System.out.println("Init Post " + postRepository.save(new Post("Saya setuju 10", 3, new Long(2), new Long(5), new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
+            System.out.println("Init Post " + postRepository.save(new Post("Saya nggak setuju", 3, new Long(3), new Long(5), new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
         };
     }
 
