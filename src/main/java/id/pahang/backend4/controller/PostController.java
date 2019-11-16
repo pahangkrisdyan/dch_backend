@@ -34,7 +34,7 @@ public class PostController {
     UserRepository userRepository;
 
     @PostMapping(value = "/")
-    public PostRes create(@RequestBody Post post){
+    public PostRes create(@ModelAttribute Post post){
         return new PostRes(postRepository.save(post));
     }
 
@@ -58,7 +58,7 @@ public class PostController {
     }
 
     @PutMapping("/{postId}")
-    public PostRes updatePost(@PathVariable Long postId, @RequestBody Post updatedPost){
+    public PostRes updatePost(@PathVariable Long postId, @ModelAttribute Post updatedPost){
         Post post = postRepository.findById(postId).get();
         if(updatedPost.getText()!=null){
             post.setText(updatedPost.getText());

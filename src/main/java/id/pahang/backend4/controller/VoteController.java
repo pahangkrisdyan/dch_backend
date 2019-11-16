@@ -25,14 +25,14 @@ public class VoteController {
     }
 
     @PostMapping("/vote")
-    public int vote(@RequestBody Vote vote){
+    public int vote(@ModelAttribute Vote vote){
         if(voteRepository.findByPostIdAndUserId(vote.getPostId(), vote.getUserId()).size()==0)
             voteRepository.save(vote);
         return voteRepository.findByPostId(vote.getPostId()).size();
     }
 
     @PostMapping("/unvote")
-    public int unvote(@RequestBody Vote vote) {
+    public int unvote(@ModelAttribute Vote vote) {
         if (!(voteRepository.findByPostIdAndUserId(vote.getPostId(), vote.getUserId()).size() == 0)) {
             Vote oldVote = voteRepository.findByPostIdAndUserId(vote.getPostId(), vote.getUserId()).get(0);
             voteRepository.findById(oldVote.getId());

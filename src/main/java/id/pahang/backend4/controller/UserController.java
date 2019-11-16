@@ -15,13 +15,13 @@ public class UserController {
     UserRepository userRepository;
 
     @PostMapping("/byemail")
-    public User getByEmail(@RequestBody GetByEmailReqBody getByEmailReqBody){
+    public User getByEmail(@ModelAttribute GetByEmailReqBody getByEmailReqBody){
         System.out.println(userRepository.findByEmail(getByEmailReqBody.getEmail()).get(0).toString());
         return userRepository.findByEmail(getByEmailReqBody.getEmail()).get(0);
     }
 
     @PostMapping()
-    public User createUser(@RequestBody User user){
+    public User createUser(@ModelAttribute User user){
         return userRepository.save(user);
     }
 
@@ -43,7 +43,7 @@ public class UserController {
     }
 
     @PutMapping("/{userId}")
-    public User updateUser(@PathVariable Long userId, @RequestBody User updateUser){
+    public User updateUser(@PathVariable Long userId, @ModelAttribute User updateUser){
         User user =  userRepository.findById(userId).get();
         if(updateUser.getEmail()!=null){
             user.setEmail(updateUser.getEmail());
