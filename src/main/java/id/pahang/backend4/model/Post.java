@@ -11,6 +11,8 @@ public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    private String title;
     private String text;
     private int type;
 
@@ -29,13 +31,22 @@ public class Post {
 
     }
 
-    public Post(String text, int type, Long userId, Long postParentId, Long tagId, String imgDownloadUrl) {
+    public Post(String title, String text, int type, Long userId, Long postParentId, Long tagId, String imgDownloadUrl) {
         this.text = text;
         this.type = type;
         this.userId = userId;
         this.postParentId = postParentId;
         this.tagId = tagId;
         this.imgDownloadUrl = imgDownloadUrl;
+        this.title = title;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getImgDownloadUrl() {
