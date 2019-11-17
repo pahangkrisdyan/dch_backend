@@ -2,6 +2,7 @@ package id.pahang.backend4.controller;
 
 
 import id.pahang.backend4.model.Post;
+import id.pahang.backend4.model.User;
 import id.pahang.backend4.repository.PostRepository;
 import id.pahang.backend4.repository.TagRepository;
 import id.pahang.backend4.repository.UserRepository;
@@ -38,11 +39,18 @@ public class PostController {
         return new PostRes(postRepository.save(post));
     }
 
+    @GetMapping("/problems/byuserid/{userId}")
+    public List<PostRes> getAllProblemByUserId(@PathVariable Long userId){
+        return postRepository.findByUserIdAndType(userId, 1).stream().map(item ->
+            new PostRes(item)
+        ).collect(Collectors.toList());
+    }
+
     @GetMapping("/problems")
     public List<PostRes> getAllProblem(){
-        return postRepository.findByType(1).stream().map(item -> {
-            return new PostRes(item);
-        }).collect(Collectors.toList());
+        return postRepository.findByType(1).stream().map(item ->
+            new PostRes(item)
+        ).collect(Collectors.toList());
     }
 
     @GetMapping()
@@ -264,6 +272,25 @@ public class PostController {
 
         public void setComments(List<PostRes> comments) {
             this.comments = comments;
+        }
+    }
+
+    class GetAllProblemByUserIdReqBody {
+        private Long userId;
+
+        public GetAllProblemByUserIdReqBody(Long userId) {
+            this.userId = userId;
+        }
+
+        public GetAllProblemByUserIdReqBody() {
+        }
+
+        public Long getUserId() {
+            return userId;
+        }
+
+        public void setUserId(Long userId) {
+            this.userId = userId;
         }
     }
 }
