@@ -40,10 +40,8 @@ public class PostController {
     }
 
     @GetMapping("/problems/byuserid/{userId}")
-    public List<PostRes> getAllProblemByUserId(@PathVariable Long userId){
-        return postRepository.findByUserIdAndType(userId, 1).stream().map(item ->
-            new PostRes(item)
-        ).collect(Collectors.toList());
+    public List<Post> getAllProblemByUserId(@PathVariable Long userId){
+        return postRepository.findByUserIdAndType(userId, 1);
     }
 
     @GetMapping("/problems")
