@@ -22,7 +22,7 @@ class InitDatabase {
             System.out.println("Init User " + userRepository.save(new User("expert1@gmail.com",1,"Nama Expert 2", "https://assets-a2.kompasiana.com/items/album/2018/11/21/foto-pria-ganteng-indonesia-21-5bf5756faeebe169634adeb4.jpg?t=o&v=350")));
             // Worker
             System.out.println("Init User  " + userRepository.save(new User("worker1@gmail.com",2,"Nama Worker 1", "https://assets-a2.kompasiana.com/items/album/2018/11/21/foto-pria-ganteng-indonesia-21-5bf5756faeebe169634adeb4.jpg?t=o&v=350")));
-            System.out.println("Init User  " + userRepository.save(new User("worker1@gmail.com",2,"Nama Worker 2", "https://assets-a2.kompasiana.com/items/album/2018/11/21/foto-pria-ganteng-indonesia-21-5bf5756faeebe169634adeb4.jpg?t=o&v=350")));
+            System.out.println("Init User  " + userRepository.save(new User("worker2@gmail.com",2,"Nama Worker 2", "https://assets-a2.kompasiana.com/items/album/2018/11/21/foto-pria-ganteng-indonesia-21-5bf5756faeebe169634adeb4.jpg?t=o&v=350")));
         };
     }
 
