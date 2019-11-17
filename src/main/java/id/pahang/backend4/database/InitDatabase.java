@@ -46,12 +46,7 @@ class InitDatabase {
             System.out.println("Init Post " + postRepository.save(new Post("Head Protection","Workers must wear hard hats where there is potential for objects falling from above, bumps on their heads from fixed objects, or intentional heads in contact with electrical hazards. Hard hats are routinely checked for dents, cracks or damage. hard hat is replaced after a heavy blow or electric shock. Hard hat is maintained in good condition.", 1, new Long(3), null, new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
 
             //solution
-            System.out.println("Init Post " + postRepository.save(new Post(null,"Keep clear verses all the time.\n" +
-                    "Sort the ingredients and stack them safely. Stacks cannot be too high.\n" +
-                    "Be careful of the floor openings and ensure that they are fenced or closed.\n" +
-                    "Remove reject as soon as possible.\n" +
-                    "Provide sufficient lighting.\n" +
-                    "Familiarize with the location and operation of fire fighting equipment.", 2, new Long(1), new Long(1), new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg" )));
+            System.out.println("Init Post " + postRepository.save(new Post(null,"Keep clear verses all the time. Sort the ingredients and stack them safely. Stacks cannot be too high. Be careful of the floor openings and ensure that they are fenced or closed Remove reject as soon as possible. Provide sufficient lighting. Familiarize with the location and operation of fire fighting equipment.", 2, new Long(1), new Long(1), new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg" )));
 
             //comment
             System.out.println("Init Post " + postRepository.save(new Post(null,"Iya benar", 3, new Long(2), new Long(1), new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
@@ -62,13 +57,7 @@ class InitDatabase {
             System.out.println("Init Post " + postRepository.save(new Post("Electrical Safety","Work on new and existing energized (hot) electrical circuits is prohibited until all power is shut off and grounds are attached. An effective Lockout/Tagout system is in place. Frayed, damaged or worn electrical cords or cables are promptly replaced. All extension cords have grounding prongs. Protect flexible cords and cables from damage. Sharp corners and projections should be avoided. Use extension cord sets used with portable electric tools and appliancesthat are the three-wire type and designed for hard or extra-hard service. (Look for some of the following letters imprinted on the casing: S, ST, SO, STO.).  All electrical tools and equipment are maintained in safe condition and checked regularly for defects and taken out of service if a defect is found. Do not bypass any protective system or device designed to protect employees from contact with electrical energy. Overhead electrical power lines are located and identified. Ensure that ladders, scaffolds, equipment or materials never come within 10 feet  f electrical power lines. All electrical tools must be properly grounded unless they are of the double insulated type. Multiple plug adapters are prohibited.", 1, new Long(4), null, new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
 
             //solution
-            System.out.println("Init Post " + postRepository.save(new Post(null, "Before you operate the machine, make sure that the dangerous part of the engine is installed with a guard.\n" +
-                    "Avoid going to any area with sufficient lighting because there may be several dangerous places that have not been equipped with fences.\n" +
-                    "Stay alert and careful to move cranes, hooks or lifting equipment.\n" +
-                    "Before you use an electrical installation or appliance, check the condition of the electrical cables.\n" +
-                    "Avoid dragging the electric cable above the ground or allowing the cable to come into contact with water.\n" +
-                    "Using electrical equipment installed with earth leakage circuit breaker.\n" +
-                    "Use and handle chemicals carefully.", 2, new Long(1), new Long(5),new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
+            System.out.println("Init Post " + postRepository.save(new Post(null, "Before you operate the machine, make sure that the dangerous part of the engine is installed with a guard. Avoid going to any area with sufficient lighting because there may be several dangerous places that have not been equipped with fences. Stay alert and careful to move cranes, hooks or lifting equipment. Before you use an electrical installation or appliance, check the condition of the electrical cables. Avoid dragging the electric cable above the ground or allowing the cable to come into contact with water. Using electrical equipment installed with earth leakage circuit breaker. Use and handle chemicals carefully.", 2, new Long(1), new Long(5),new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
 
             //comment
             System.out.println("Init Post " + postRepository.save(new Post(null,"Saya setuju", 3, new Long(2), new Long(5), new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
