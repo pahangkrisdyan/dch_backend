@@ -46,7 +46,7 @@ class InitDatabase {
             System.out.println("Init Post " + postRepository.save(new Post("Penjumlahan Matematika","Berapa 1 + 1?", 1, new Long(3), null, new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
 
             //solution
-            System.out.println("Init Post " + postRepository.save(new Post(null,"Jawabannya 2", 2, new Long(1), new Long(1), new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));
+            System.out.println("Init Post " + postRepository.save(new Post(null,"Jawabannya 2", 2, new Long(1), new Long(1), new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg" )));
 
             //comment
             System.out.println("Init Post " + postRepository.save(new Post(null,"Iya benar 2", 3, new Long(2), new Long(1), new Long(2), "http://www.anekabangunan.com/wp-content/uploads/2018/11/7Cara-Mengatasi-Tembok-Retak-Rambut.jpg")));

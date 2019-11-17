@@ -33,7 +33,7 @@ public class PostController {
     @Autowired
     UserRepository userRepository;
 
-    @PostMapping(value = "/")
+    @PostMapping()
     public PostRes create(@ModelAttribute Post post){
         return new PostRes(postRepository.save(post));
     }
